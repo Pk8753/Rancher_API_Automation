@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "authProvider": {
+      "type": "string"
+    },
+    "baseType": {
+      "type": "string"
+    },
+    "clusterId": {
+      "type": ["string", "null"]
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdTS": {
+      "type": "integer"
+    },
+    "creatorId": {
+      "type": ["string", "null"]
+    },
+    "current": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "expired": {
+      "type": "boolean"
+    },
+    "id": {
+      "type": "string"
+    },
+    "isDerived": {
+      "type": "boolean"
+    },
+    "labels": {
+      "type": "object",
+      "properties": {
+        "authn.management.cattle.io/kind": {
+          "type": "string"
+        },
+        "authn.management.cattle.io/token-userId": {
+          "type": "string"
+        },
+        "cattle.io/creator": {
+          "type": "string"
+        }
+      },
+      "required": ["authn.management.cattle.io/token-userId", "cattle.io/creator"]
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": ["self"]
+    },
+    "name": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string"
+    },
+    "ttl": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "uuid": {
+      "type": "string",
+      "format": "uuid"
+    }
+  },
+  "required": [
+    "authProvider",
+    "baseType",
+    "created",
+    "createdTS",
+    "current",
+    "description",
+    "enabled",
+    "expired",
+    "id",
+    "isDerived",
+    "labels",
+    "links",
+    "name",
+    "ttl",
+    "type",
+    "userId",
+    "uuid"
+  ]
+}

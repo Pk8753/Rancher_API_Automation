@@ -1,0 +1,18 @@
+{
+    "endpointURL": "https://localhost/v3/tokens/token-s66gw",
+    "invalidEndpointURL": "https://localhost/v3/tokens/token-7f9kt123",
+    "username":"token-9999",
+    "password":"27c7m2w9vggv6qwvwssk6prxhshlhcnqk2h5mbxp8978978v7r7sljt42k9tx",
+    "invalidUsername" : "ABCR",
+    "invalidPassword":"27c7m2w9vggv6qwvwssk6prxhshlhcnqk2h5mbxp39334534jksdfh",
+    "testPayload": {
+      "description": "UI session"
+    },
+    "testInvalidPayload": {
+      "description": "UI sessAasdion"
+    }
+  }
+  
+
+
+  
